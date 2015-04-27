@@ -1,0 +1,15 @@
+<h1>New Design Firm</h1>
+
+<%= form_for @design_firm do |f| %>
+  <%= f.label :name, 'Full name' %>
+  <%= f.text_field :name, class: 'form-control' %>
+
+  <br>
+
+  <%= f.label :email %>
+  <%= f.text_field :email %>
+
+  <br>
+
+  <%= f.submit 'Create' %>
+<% end %>
